@@ -1,0 +1,31 @@
+debug: true
+logging:
+  level:
+    org:
+      springframework:
+        web:
+          socket=DEBUG:
+spring:
+  web:
+    resources:
+      cache:
+        cachecontrol:
+          no-cache: true
+  jpa:
+    database: POSTGRESQL
+    hibernate.ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5433/altenShop
+    username: postgres
+    password: root
+
+management:
+  endpoint:
+    shutdown:
+      enabled: true
+
+
+
+
+
